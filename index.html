@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepest Apologies (Not Really) | The Trip I Took Without You</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&family=Bungee&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Quicksand', sans-serif;
+            scroll-behavior: smooth;
+            background-color: #f0f4f8;
+        }
+
+        .bungee {
+            font-family: 'Bungee', cursive;
+        }
+
+        /* Slap Animation */
+        @keyframes slap-effect {
+            0% {
+                transform: rotate(0deg) scale(1);
+            }
+
+            25% {
+                transform: rotate(-20deg) scale(1.1);
+            }
+
+            50% {
+                transform: rotate(15deg) scale(1.1);
+                filter: brightness(1.5) sepia(1) hue-rotate(-50deg);
+            }
+
+            100% {
+                transform: rotate(0deg) scale(1);
+            }
+        }
+
+        .slapped {
+            animation: slap-effect 0.3s ease-out;
+        }
+
+        /* Mukhe Mutbo Text Animation */
+        .piss-text-container {
+            position: absolute;
+            inset: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            z-index: 60;
+            pointer-events: none;
+            transition: opacity 0.3s;
+        }
+
+        .pissing .piss-text-container {
+            opacity: 1;
+        }
+
+        .pissing .mukhe-text {
+            animation: text-pulse 0.3s infinite alternate;
+        }
+
+        @keyframes text-pulse {
+            0% {
+                transform: scale(1) rotate(-10deg);
+                color: #ff0000;
+                text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9), 0 0 10px #ff0000;
+            }
+
+            100% {
+                transform: scale(1.3) rotate(-15deg);
+                color: #ff4d4d;
+                text-shadow: 0 4px 20px rgba(0, 0, 0, 0.9), 0 0 20px #ff0000, 0 0 30px #ff0000;
+            }
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #a1c4fd 0%, #c2e9fb 100%);
+        }
+
+        .shake {
+            animation: shake 0.2s infinite;
+        }
+
+        @keyframes shake {
+            0% {
+                transform: translate(1px, 1px) rotate(0deg);
+            }
+
+            50% {
+                transform: translate(-2px, 2px) rotate(1deg);
+            }
+
+            100% {
+                transform: translate(1px, -1px) rotate(-1deg);
+            }
+        }
+
+        /* Fixed Layouts for the Gift Interaction (Responsive) */
+        .gift-container {
+            height: 420px;
+            /* Mobile height */
+            width: 100%;
+            position: relative;
+        }
+
+        @media (min-width: 768px) {
+            .gift-container {
+                height: 550px;
+                /* Desktop height */
+            }
+        }
+
+        .owner-gift-pos {
+            position: absolute;
+            top: 0;
+            left: 0%;
+            z-index: 40;
+        }
+
+        .friend-gift-pos {
+            position: absolute;
+            top: 160px;
+            /* Mobile offset */
+            right: 0%;
+            z-index: 10;
+        }
+
+        @media (min-width: 768px) {
+            .friend-gift-pos {
+                top: 240px;
+                /* Desktop offset */
+            }
+        }
+    </style>
+</head>
+
+<body class="text-slate-800">
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex flex-col items-center justify-center text-center p-4 md:p-6 gradient-bg">
+        <h1 class="bungee text-5xl md:text-7xl mb-8 text-white drop-shadow-lg leading-tight">I'M SO SORRY...</h1>
+
+        <!-- Polaroid Frame -->
+        <div
+            class="bg-white p-3 md:p-4 pb-5 md:pb-6 shadow-2xl rounded-sm transform -rotate-3 hover:rotate-2 transition-transform duration-300 border border-gray-200 mb-8 w-[90%] max-w-xs md:max-w-sm">
+            <!-- Swap this src with your actual Puri photo link -->
+            <img src="allm.jpeg" alt="Puri Beach" class="w-full h-48 md:h-72 object-cover border border-gray-100">
+            <div class="bungee text-xl md:text-2xl text-slate-800 mt-3 md:mt-4 tracking-wider uppercase">Puri 2026</div>
+        </div>
+
+        <p class="text-lg md:text-2xl max-w-2xl font-light italic text-white drop-shadow-md px-4">
+            "That I have such great taste in destinations and had to go check it out for us first."
+        </p>
+        <div class="mt-8 md:mt-10 animate-bounce">
+            <a href="#apology"
+                class="bg-white text-blue-500 px-6 py-3 md:px-8 md:py-3 rounded-full font-bold shadow-lg hover:bg-blue-50 transition text-sm md:text-base">Read
+                My Formal Regret</a>
+        </div>
+    </section>
+
+    <!-- The "Apology" -->
+    <section id="apology" class="py-16 md:py-20 px-4 md:px-6 max-w-4xl mx-auto text-center">
+        <h2 class="text-2xl md:text-3xl font-bold mb-6 md:mb-8">My Official Statement</h2>
+        <div
+            class="bg-white p-6 md:p-8 rounded-3xl shadow-sm border border-blue-100 leading-relaxed text-base md:text-lg">
+            <p class="mb-4">Look, I know what you're thinking. "Wow, they really just left us behind to rot in our
+                boring routines while they lived their best life."</p>
+            <p class="mb-4">And honestly? You're right. It was amazing. The food was 10/10, the views were 11/10.</p>
+            <p class="font-bold text-blue-600">I promise to never do it again (without at least sending a postcard 3
+                weeks late).</p>
+        </div>
+    </section>
+
+    <!-- The Segment -->
+    <section id="slap-zone" class="py-16 md:py-20 px-4 md:px-6 bg-slate-900 text-white text-center">
+        <h2 class="bungee text-3xl md:text-4xl mb-2 text-yellow-400">The "Fairness" Segment</h2>
+        <p class="mb-8 md:mb-10 text-sm md:text-base text-slate-400">Depending on who you are, I have a very specific
+            gift for you.</p>
+
+        <div class="max-w-xl mx-auto bg-slate-800 p-5 md:p-8 rounded-3xl shadow-2xl border border-slate-700 w-full">
+
+            <!-- Friend Interaction -->
+            <div id="setup-friend">
+                <h4 class="text-blue-400 font-bold mb-4 uppercase tracking-widest text-xs md:text-sm text-left">Identify
+                    Yourself</h4>
+                <div class="mb-6 md:mb-8 text-left">
+                    <label class="block text-xs md:text-sm font-medium mb-2">Your Name</label>
+                    <input type="text" id="friend-name" placeholder="Enter your name..."
+                        class="w-full bg-slate-700 border border-slate-600 rounded-xl px-4 py-3 focus:outline-none focus:ring-2 focus:ring-yellow-400 text-white text-sm md:text-base">
+                </div>
+
+                <button onclick="checkFate()"
+                    class="w-full bg-yellow-400 text-slate-900 font-bold py-3 md:py-4 rounded-xl hover:scale-105 transition active:scale-95 text-sm md:text-base">
+                    CLAIM MY REWARD
+                </button>
+            </div>
+
+            <!-- The Result View -->
+            <div id="game-view" class="hidden relative pt-6 flex flex-col items-center">
+                <h3 id="target-title"
+                    class="text-lg md:text-xl mb-6 md:mb-8 font-bold bungee text-yellow-400 leading-tight"></h3>
+
+                <div id="interaction-container"
+                    class="relative w-full max-w-sm flex flex-col items-center min-h-[280px] md:min-h-[350px]">
+
+                    <!-- Canvas for the golden fluid stream physics -->
+                    <canvas id="piss-canvas"
+                        class="absolute inset-0 w-full h-full z-40 pointer-events-none hidden"></canvas>
+
+                    <!-- Trip Goer (Will be top-left in gift mode) -->
+                    <div id="owner-container" class="hidden">
+                        <div
+                            class="w-28 h-28 md:w-48 md:h-48 rounded-full border-4 border-blue-500 overflow-hidden bg-slate-700 shadow-2xl relative z-40">
+                            <img id="owner-img-display" class="w-full h-full object-cover" src="">
+                        </div>
+                    </div>
+
+                    <!-- Friend (Will be bottom-right in gift mode, centered in slap mode) -->
+                    <div id="friend-wrapper"
+                        class="relative z-10 overflow-hidden rounded-2xl border-4 border-slate-600 bg-slate-700 w-64 h-64 md:w-80 md:h-80 mx-auto shadow-inner">
+                        <img id="slap-img" src="" class="w-full h-full object-cover">
+                        <!-- Yellow splash overlay -->
+                        <div id="piss-splash"
+                            class="absolute inset-0 bg-yellow-500 mix-blend-color opacity-0 transition-opacity duration-300 z-20 pointer-events-none">
+                        </div>
+
+                        <!-- MUKHE MUTBO Text -->
+                        <div class="piss-text-container">
+                            <span
+                                class="mukhe-text bungee text-4xl md:text-6xl text-center leading-tight tracking-wider font-black">MUKHE<br>MUTBO!</span>
+                        </div>
+
+                        <div id="hand-icon"
+                            class="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-5xl md:text-6xl z-30">
+                            🖐️</div>
+                    </div>
+
+                </div>
+
+                <div class="mt-6 md:mt-8 w-full space-y-4">
+                    <button id="action-btn"
+                        class="w-full bg-red-600 text-white font-black py-3 md:py-4 rounded-xl text-lg md:text-xl shadow-lg transition-all active:scale-95">
+                        TRIGGER
+                    </button>
+
+                    <!-- New Counter Section -->
+                    <div id="forgive-stats" class="hidden text-center text-xs md:text-sm text-slate-400 mt-2">
+                        Forgiveness bestowed: <span id="forgive-count"
+                            class="font-bold text-yellow-400 text-base md:text-lg">0</span> times
+                        <button onclick="resetForgivenessCount()"
+                            class="ml-2 md:ml-3 text-[10px] md:text-xs text-slate-500 hover:text-slate-300 underline">Reset
+                            count</button>
+                    </div>
+
+                    <div class="text-center">
+                        <button onclick="resetGame()"
+                            class="text-slate-400 hover:text-white underline text-xs md:text-sm mt-2">Go Back</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 md:py-10 text-center text-slate-400 text-xs md:text-sm">
+        Made with 0% guilt and 100% hydration.
+    </footer>
+
+    <script>
+        // --- EDIT THESE URLs AND NAMES ---
+        const OWNER_PHOTO_URL = "jis.jpeg"; // <-- PUT YOUR PHOTO LINK HERE
+
+        // Add your friends' names (lowercase) and their photo links here
+        const FRIENDS_DATA = {
+            // Ronit (aka Ronty) - Paste his photo link below for both
+            "ronit": { isVIP: true, photo: "ronty.jpeg" },
+            "ronty": { isVIP: true, photo: "ronty.jpeg" },
+
+            // Shibayan (aka Shiba) - Paste his photo link below for both
+            "shibayan": { isVIP: true, photo: "shiba.jpeg" },
+            "shiba": { isVIP: true, photo: "shiba.jpeg" },
+
+            // Swapnendu
+            "swapnendu": { isVIP: true, photo: "swap.jpeg" }
+        };
+
+        const DEFAULT_FRIEND_PHOTO = "all.jpeg "; // Fallback for names not in the list
+        // ---------------------------------
+
+        let pissParticles = [];
+        let isPissing = false;
+        let animationFrameId;
+        let forgiveCount = 0;
+
+        const setupFriend = document.getElementById('setup-friend');
+        const gameView = document.getElementById('game-view');
+        const slapImg = document.getElementById('slap-img');
+        const friendWrapper = document.getElementById('friend-wrapper');
+        const ownerImgDisplay = document.getElementById('owner-img-display');
+        const ownerContainer = document.getElementById('owner-container');
+        const targetTitle = document.getElementById('target-title');
+        const actionBtn = document.getElementById('action-btn');
+        const interactionContainer = document.getElementById('interaction-container');
+        const pissSplash = document.getElementById('piss-splash');
+        const canvas = document.getElementById('piss-canvas');
+        const ctx = canvas.getContext('2d');
+        const forgiveStats = document.getElementById('forgive-stats');
+        const forgiveCountEl = document.getElementById('forgive-count');
+
+        function checkFate() {
+            const nameInput = document.getElementById('friend-name').value.toLowerCase().trim();
+
+            if (!nameInput) {
+                alert("Please enter your name!");
+                return;
+            }
+
+            // Look up friend data
+            let friendPhotoUrl = DEFAULT_FRIEND_PHOTO;
+            let isVIP = false;
+
+            if (FRIENDS_DATA[nameInput]) {
+                friendPhotoUrl = FRIENDS_DATA[nameInput].photo;
+                isVIP = FRIENDS_DATA[nameInput].isVIP;
+            }
+
+            slapImg.src = friendPhotoUrl;
+            setupFriend.classList.add('hidden');
+            gameView.classList.remove('hidden');
+
+            if (isVIP) {
+                // PISS MODE: Enforce Top-Left / Bottom-Right layout
+                targetTitle.innerText = "SPECIAL GIFT FOR " + nameInput.toUpperCase();
+
+                // Set owner photo from the hardcoded URL above
+                ownerImgDisplay.src = OWNER_PHOTO_URL;
+
+                // Container changes
+                interactionContainer.classList.remove('flex', 'flex-col', 'items-center', 'min-h-[280px]', 'md:min-h-[350px]');
+                interactionContainer.classList.add('gift-container');
+
+                // Owner (Top Left)
+                ownerContainer.className = 'owner-gift-pos';
+
+                // Friend (Bottom Right)
+                // Use w-56 h-56 on mobile, w-72 h-72 on desktop
+                friendWrapper.className = 'friend-gift-pos overflow-hidden rounded-2xl border-4 border-slate-600 bg-slate-700 w-56 h-56 md:w-72 md:h-72 shadow-2xl';
+
+                actionBtn.innerText = "ACTIVATE FORGIVENESS";
+                actionBtn.className = "w-full bg-yellow-500 text-slate-900 font-black py-3 md:py-4 rounded-xl text-lg md:text-xl shadow-lg";
+                actionBtn.onclick = startPissing;
+
+                // Show Counter
+                forgiveStats.classList.remove('hidden');
+            } else {
+                // DEFAULT SLAP MODE: Centered
+                targetTitle.innerText = "THE SLAP OF REGRET";
+
+                // Container changes
+                interactionContainer.classList.add('flex', 'flex-col', 'items-center', 'min-h-[280px]', 'md:min-h-[350px]');
+                interactionContainer.classList.remove('gift-container');
+
+                ownerContainer.className = 'hidden';
+                friendWrapper.className = 'relative z-10 overflow-hidden rounded-2xl border-4 border-slate-600 bg-slate-700 w-64 h-64 md:w-80 md:h-80 mx-auto shadow-inner';
+
+                actionBtn.innerText = "SLAP ME";
+                actionBtn.className = "w-full bg-red-600 text-white font-black py-3 md:py-4 rounded-xl text-lg md:text-xl shadow-lg";
+                actionBtn.onclick = performSlap;
+
+                // Hide Counter
+                forgiveStats.classList.add('hidden');
+            }
+        }
+
+        function renderPissStream() {
+            if (!isPissing && pissParticles.length === 0) return;
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            const ownerRect = ownerContainer.getBoundingClientRect();
+            const friendRect = friendWrapper.getBoundingClientRect();
+            const contRect = interactionContainer.getBoundingClientRect();
+
+            // Calculate exact start and end points relative to container
+            const startX = (ownerRect.left - contRect.left) + ownerRect.width * 0.8;
+            const startY = (ownerRect.top - contRect.top) + ownerRect.height * 0.8;
+            const targetX = (friendRect.left - contRect.left) + friendRect.width * 0.5;
+            const targetY = (friendRect.top - contRect.top) + friendRect.height * 0.4;
+
+            if (isPissing) {
+                // Spawn pale yellow droplets (dense, continuous stream)
+                for (let i = 0; i < 15; i++) {
+                    const t = 45 + Math.random() * 10 - 5; // Frames to reach target
+                    const g = 0.5; // Gravity effect
+
+                    const dx = targetX - startX;
+                    const dy = targetY - startY;
+
+                    // Arc math
+                    const vx = dx / t;
+                    const vy = (dy - 0.5 * g * t * t) / t;
+
+                    pissParticles.push({
+                        x: startX + Math.random() * 3 - 1.5,
+                        y: startY + Math.random() * 3 - 1.5,
+                        vx: vx + Math.random() * 0.6 - 0.3,
+                        vy: vy + Math.random() * 0.6 - 0.3,
+                        life: t * 1.1,
+                        size: Math.random() * 2 + 1.5,
+                        color: Math.random() > 0.4 ? 'rgba(255, 250, 170, 0.9)' : 'rgba(250, 240, 150, 0.8)'
+                    });
+                }
+            }
+
+            // Update and draw liquid droplets
+            for (let i = pissParticles.length - 1; i >= 0; i--) {
+                let p = pissParticles[i];
+                p.x += p.vx;
+                p.vy += 0.5; // Apply gravity to bend the stream
+                p.y += p.vy;
+                p.life--;
+
+                ctx.beginPath();
+                ctx.arc(p.x, p.y, p.size, 0, Math.PI * 2);
+                ctx.fillStyle = p.color;
+                ctx.shadowBlur = 4;
+                ctx.shadowColor = 'rgba(250, 240, 120, 0.5)';
+                ctx.fill();
+
+                if (p.life <= 0) {
+                    pissParticles.splice(i, 1);
+                }
+            }
+
+            animationFrameId = requestAnimationFrame(renderPissStream);
+        }
+
+        function startPissing() {
+            // Increment and display counter
+            forgiveCount++;
+            forgiveCountEl.innerText = forgiveCount;
+
+            // Setup canvas
+            canvas.width = interactionContainer.clientWidth;
+            canvas.height = interactionContainer.clientHeight;
+            canvas.classList.remove('hidden');
+
+            isPissing = true;
+            pissParticles = [];
+            renderPissStream();
+
+            interactionContainer.classList.add('pissing');
+            slapImg.classList.add('shake');
+            pissSplash.classList.remove('opacity-0');
+            pissSplash.classList.add('opacity-60');
+
+            actionBtn.innerText = "RESTORING BALANCE...";
+            actionBtn.disabled = true;
+
+            setTimeout(() => {
+                isPissing = false; // Stop spawning particles, let rest fall
+                interactionContainer.classList.remove('pissing');
+                slapImg.classList.remove('shake');
+                pissSplash.classList.remove('opacity-60');
+                pissSplash.classList.add('opacity-0');
+
+                actionBtn.innerText = "ACTIVATE FORGIVENESS";
+                actionBtn.disabled = false;
+
+                // Hide canvas fully after particles finish falling
+                setTimeout(() => canvas.classList.add('hidden'), 1000);
+            }, 3000);
+        }
+
+        function performSlap() {
+            slapImg.classList.remove('slapped');
+            void slapImg.offsetWidth;
+            slapImg.classList.add('slapped');
+
+            const hand = document.getElementById('hand-icon');
+            hand.classList.remove('hidden');
+            setTimeout(() => hand.classList.add('hidden'), 300);
+        }
+
+        function resetForgivenessCount() {
+            forgiveCount = 0;
+            forgiveCountEl.innerText = forgiveCount;
+        }
+
+        function resetGame() {
+            gameView.classList.add('hidden');
+            setupFriend.classList.remove('hidden');
+            document.getElementById('friend-name').value = '';
+            interactionContainer.classList.remove('pissing');
+            slapImg.classList.remove('shake');
+            pissSplash.classList.add('opacity-0');
+            pissSplash.classList.remove('opacity-60');
+            actionBtn.disabled = false;
+
+            // Clear Canvas State
+            isPissing = false;
+            pissParticles = [];
+            canvas.classList.add('hidden');
+            if (animationFrameId) cancelAnimationFrame(animationFrameId);
+        }
+    </script>
+</body>
+
+</html>
